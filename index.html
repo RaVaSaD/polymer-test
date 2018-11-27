@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+
+  <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>  
+
+  <script type="module" src="./my-element.js"></script>
+  <style>
+    .test {
+      background-color: red;
+      margin: 10px 10px 0 0;
+      padding: 10px;
+    }
+    body {
+      color: black;
+    }
+  </style> 
+  <title>Ejemeplo de LitElement</title>
+</head>
+  <body>
+      <!-- Add your element tags here -->
+    <my-element feeling="AMAZING" firstName="Sergio">      
+      <span slot="children">Prueba 1 de Slot Name con children</span>
+      <span slot="anotherChildren">Prueba 2 de Slot Name con anotherChildren</span>
+    </my-element>
+    <div class="test">Test area</div>
+  </body>
+</html>
